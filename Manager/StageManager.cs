@@ -103,8 +103,9 @@ public class StageManager : MonoBehaviour
 
 
     private void AnswerCheck(){
+
+        answerValue = int.Parse(answerField.text != "" ? answerField.text : 0.ToString()); 
         
-        answerValue = int.Parse(answerField.text); 
         
         if(answerValue.Equals(questionCreator.CorrectAnswerValue))
             Score++;

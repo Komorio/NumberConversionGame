@@ -14,11 +14,12 @@ public class GameManager : MonoBehaviour
     private int decimalMin = 0;
     [SerializeField]
     private int decimalMax = 31;
-
+    
     public int DeciamlMax {get => decimalMax; set => decimalMax = value;}
     public int DecimalMin {get => decimalMin; set => decimalMin = value;}
 
     public int GameCode {get => gameCode;}
+
 
     private void Awake(){
         if(instance == null){
